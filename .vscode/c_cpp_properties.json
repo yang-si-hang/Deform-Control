@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/ros/**",
+        "/opt/ros/noetic/include/**",
+        "/usr/include/**",//
+        "/home/wyh/project/Kinect_program/kinect_ws/src/pc_process/include/**",
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/src/**",
+        "/usr/lib/x86_64-linux-gnu/*",
+        "/usr/local/lib/**",
+        "/usr/include/pcl-1.10/pcl/**",
+        "/usr/include/eigen3/**",
+        "/usr/include/boost/**",
+        "/usr/local/include/vtk-8.2/**",
+        "/home/wyh/VTK-8.2.0/Common/Core/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu17",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

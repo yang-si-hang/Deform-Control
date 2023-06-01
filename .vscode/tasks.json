@@ -1,0 +1,70 @@
+{
+	// 有关 tasks.json 格式的文档，请参见
+		// https://go.microsoft.com/fwlink/?LinkId=733558
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "catkin_make:debug", //代表提示的描述性信息
+				"type": "shell",  //可以选择shell或者process,如果是shell代码是在shell里面运行一个命令，如果是process代表作为一个进程来运行
+				"command": "catkin_make",//这个是我们需要运行的命令
+				"args": [
+					"-DPYTHON_EXECUTABLE=/usr/bin/python3",
+					"--directory",
+					"${workspaceFolder}"
+					// "-fdiagnostics-color=always",
+					// // "-g",
+					// // "${workspaceFolder}/src/*.cpp",
+					// "-L",
+					// "/usr/local/lib",
+					// "-l",
+					// "k4a",
+					
+					// "-L",
+					// "/usr/lib/x86_64-linux-gnu",
+					// "-l", "opencv_core",
+					// "-l", "opencv_imgproc",
+					// "-l", "opencv_imgcodecs",
+					// "-l", "opencv_video",
+					// "-l", "opencv_ml",
+					// "-l", "opencv_highgui",
+					// "-l", "opencv_objdetect",
+					// "-l", "opencv_flann",
+					// "-l", "opencv_imgcodecs",
+					// "-l", "opencv_photo",
+					// "-l", "opencv_videoio",
+					// "-l","boost_system",
+					// "-l", "pcl_io",
+					// "-l", "pcl_ml",
+					// "-l", "pcl_common",
+					// // "-l", "pcl_apps",
+					// "-l", "pcl_io_ply",
+					// "-l", "pcl_kdtree",
+					// "-l", "pcl_octree",
+					// "-l", "pcl_people",
+					// "-l", "pcl_search",
+					// "-l", "pcl_stereo",
+					// "-l", "pcl_filters",
+					// "-l", "pcl_surface",
+					// "-l", "pcl_features",
+					// "-l", "pcl_tracking",
+					// "-l", "pcl_keypoints",
+					// "-l", "pcl_outofcore",
+					// "-l", "pcl_recognition",
+					// "-l", "pcl_segmentation",
+					// "-l", "pcl_visualization",
+					// "-l", "pcl_sample_consensus",
+					// "-o",
+					// "${fileDirname}/${fileBasenameNoExtension}"
+				],//如果需要在命令后面加一些后缀，可以写在这里，比如-DCATKIN_WHITELIST_PACKAGES=“pac1;pac2”
+				// "options": {
+				// 	"cwd": "${fileDirname}"
+				// },
+				"group": {"kind":"build","isDefault":true},
+				"presentation": {
+					"reveal": "always"//可选always或者silence，代表是否输出信息
+				},
+				"problemMatcher": "$msCompile"
+			}
+		]
+	}
+	
